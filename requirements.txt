@@ -1,0 +1,4 @@
+streamlit
+google-cloud-storage
+google-cloud-datastore
+google-cloud-pubsub
