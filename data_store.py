@@ -69,7 +69,7 @@ def lead_push_api(record):
         "city": record["city"],
         "fname": record["first_name"],
         "lname": record["last_name"],
-        "phone": "2129558900",
+        "phone": record["phone_number"],
         "state": record["state"],
         "zip": record["postal_code"],
         "gender": record["gender"],
