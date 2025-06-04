@@ -89,7 +89,7 @@ def lead_push_api(record):
         logging.info(f"API response status: {response.status_code}")
 
         if response.status_code == 200:
-            if "Success" in response.text:
+            if "SUCCESS" in response.text:
                 logging.info(f"Lead push successful for {record['phone_number']}")
                 leads_push_api(record, "success", "")
             else:
