@@ -11,7 +11,7 @@ import logging
 
 url = os.getenv("CLIENT_URL")
 datastore_name = os.getenv("DATASTORE_NAME")
-batch_size =  os.getenv("BATCH_SIZE")
+batch_size =  int(os.getenv("BATCH_SIZE"))
 subscription_path = os.getenv("SUBSCRIPTION_PATH")
 
 
