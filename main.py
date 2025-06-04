@@ -4,8 +4,8 @@ from data_store import process_leads
 
 def callback(message):
     logging.info("Message Triggered")
-    process_leads()
     message.ack()
+    process_leads()
 
 streaming_pull_future = subscriber.subscribe(subscription_path, callback=callback)
 
